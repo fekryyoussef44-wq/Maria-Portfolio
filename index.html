@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maria Emad — Creative Graphic Designer</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%231a1a1a%22 /><text x=%2250%25%22 y=%2254%25%22 font-family=%22Arial, sans-serif%22 font-size=%2245%22 font-weight=%22900%22 fill=%22%23ff9800%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22>ME</text></svg>">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <div class="custom-cursor" id="cursor"></div>
+  <div class="custom-cursor-dot" id="cursorDot"></div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-m">M</span><span class="logo-rest">ARIA</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#portfolio">Work</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+
+    <div class="hero-content">
+      <h1 class="hero-name reveal-up delay-1">
+        <span class="name-line">MARIA</span>
+        <span class="name-line accent-stroke">EMAD</span>
+      </h1>
+      <div class="hero-title reveal-up delay-2">
+        <span class="title-static">Creative </span>
+        <span class="typed-wrapper">
+          <span id="typed"></span>
+          <span class="typed-cursor">|</span>
+        </span>
+      </div>
+      <p class="hero-sub reveal-up delay-3">
+        I craft scroll-stopping visuals that make brands unforgettable — 
+        from conceptual ideas to full digital storytelling.
+      </p>
+      <div class="hero-btns reveal-up delay-4">
+        <a href="#portfolio" class="btn-primary">
+          <span>View My Work</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal-right delay-2">
+      <div class="hero-img-frame">
+        <div class="frame-glow"></div>
+        <div class="hero-img-placeholder">
+          <div class="avatar-bg"></div>
+          <div class="avatar-initials">ME</div>
+          <div class="floating-badge fb-1"><i class="fa-brands fa-instagram"></i></div>
+          <div class="floating-badge fb-2"><i class="fa-solid fa-palette"></i></div>
+          <div class="floating-badge fb-3"><i class="fa-solid fa-star"></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-label">Portfolio</div>
+        <h2 class="section-title">Selected <span class="highlight">Work</span></h2>
+        <p class="section-sub">Click any project to see it in full detail</p>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <div class="portfolio-item reveal-up delay-1" data-title="Project 1" data-desc="Visual design project.">
+          <div class="port-img"><img src="image/image1.jpg" alt="Project 1"></div>
+          <div class="port-overlay">
+            <div class="port-info">
+              <h3>Project 1</h3>
+              <button class="port-view-btn"><i class="fa-solid fa-expand"></i> View</button>
+            </div>
+          </div>
+          <div class="port-glow"></div>
+        </div>
+
+        <div class="portfolio-item reveal-up delay-2 portfolio-item--tall" data-title="Project 2" data-desc="Visual design project.">
+          <div class="port-img"><img src="image/image2.jpg" alt="Project 2"></div>
+          <div class="port-overlay">
+            <div class="port-info">
+              <h3>Project 2</h3>
+              <button class="port-view-btn"><i class="fa-solid fa-expand"></i> View</button>
+            </div>
+          </div>
+          <div class="port-glow"></div>
+        </div>
+
+        <div class="portfolio-item reveal-up delay-3" data-title="Project 3" data-desc="Visual design project.">
+          <div class="port-img"><img src="image/image3.jpg" alt="Project 3"></div>
+          <div class="port-overlay">
+            <div class="port-info">
+              <h3>Project 3</h3>
+              <button class="port-view-btn"><i class="fa-solid fa-expand"></i> View</button>
+            </div>
+          </div>
+          <div class="port-glow"></div>
+        </div>
+
+        <div class="portfolio-item reveal-up delay-4 portfolio-item--wide" data-title="Project 4" data-desc="Visual design project.">
+          <div class="port-img"><img src="image/image4.jpg" alt="Project 4"></div>
+          <div class="port-overlay">
+            <div class="port-info">
+              <h3>Project 4</h3>
+              <button class="port-view-btn"><i class="fa-solid fa-expand"></i> View</button>
+            </div>
+          </div>
+          <div class="port-glow"></div>
+        </div>
+
+        <div class="portfolio-item reveal-up delay-1" data-title="Project 5" data-desc="Visual design project.">
+          <div class="port-img"><img src="image/image5.jpg" alt="Project 5"></div>
+          <div class="port-overlay">
+            <div class="port-info">
+              <h3>Project 5</h3>
+              <button class="port-view-btn"><i class="fa-solid fa-expand"></i> View</button>
+            </div>
+          </div>
+          <div class="port-glow"></div>
+        </div>
+
+        <div class="portfolio-item reveal-up delay-2" data-title="Project 6" data-desc="Visual design project.">
+          <div class="port-img"><img src="image/image6.jpg" alt="Project 6"></div>
+          <div class="port-overlay">
+            <div class="port-info">
+              <h3>Project 6</h3>
+              <button class="port-view-btn"><i class="fa-solid fa-expand"></i> View</button>
+            </div>
+          </div>
+          <div class="port-glow"></div>
+        </div>
+
+        <div class="portfolio-item reveal-up delay-3 portfolio-item--tall" data-title="Project 7" data-desc="Visual design project.">
+          <div class="port-img"><img src="image/image7.jpg" alt="Project 7"></div>
+          <div class="port-overlay">
+            <div class="port-info">
+              <h3>Project 7</h3>
+              <button class="port-view-btn"><i class="fa-solid fa-expand"></i> View</button>
+            </div>
+          </div>
+          <div class="port-glow"></div>
+        </div>
+
+        <div class="portfolio-item reveal-up delay-4" data-title="Project 8" data-desc="Visual design project.">
+          <div class="port-img"><img src="image/image8.jpg" alt="Project 8"></div>
+          <div class="port-overlay">
+            <div class="port-info">
+              <h3>Project 8</h3>
+              <button class="port-view-btn"><i class="fa-solid fa-expand"></i> View</button>
+            </div>
+          </div>
+          <div class="port-glow"></div>
+        </div>
+
+        <div class="portfolio-item reveal-up delay-1 portfolio-item--wide" data-title="Project 9" data-desc="Visual design project.">
+          <div class="port-img"><img src="image/image9.jpg" alt="Project 9"></div>
+          <div class="port-overlay">
+            <div class="port-info">
+              <h3>Project 9</h3>
+              <button class="port-view-btn"><i class="fa-solid fa-expand"></i> View</button>
+            </div>
+          </div>
+          <div class="port-glow"></div>
+        </div>
+
+        <div class="portfolio-item reveal-up delay-2" data-title="Project 10" data-desc="Visual design project.">
+          <div class="port-img"><img src="image/image10.jpg" alt="Project 10"></div>
+          <div class="port-overlay">
+            <div class="port-info">
+              <h3>Project 10</h3>
+              <button class="port-view-btn"><i class="fa-solid fa-expand"></i> View</button>
+            </div>
+          </div>
+          <div class="port-glow"></div>
+        </div>
+
+        <div class="portfolio-item reveal-up delay-3" data-title="Project 11" data-desc="Visual design project.">
+          <div class="port-img"><img src="image/image11.jpg" alt="Project 11"></div>
+          <div class="port-overlay">
+            <div class="port-info">
+              <h3>Project 11</h3>
+              <button class="port-view-btn"><i class="fa-solid fa-expand"></i> View</button>
+            </div>
+          </div>
+          <div class="port-glow"></div>
+        </div>
+
+        <div class="portfolio-item reveal-up delay-4 portfolio-item--tall" data-title="Project 12" data-desc="Visual design project.">
+          <div class="port-img"><img src="image/image12.jpg" alt="Project 12"></div>
+          <div class="port-overlay">
+            <div class="port-info">
+              <h3>Project 12</h3>
+              <button class="port-view-btn"><i class="fa-solid fa-expand"></i> View</button>
+            </div>
+          </div>
+          <div class="port-glow"></div>
+        </div>
+
+        <div class="portfolio-item reveal-up delay-1 portfolio-item--wide" data-title="Project 13" data-desc="Visual design project.">
+          <div class="port-img"><img src="image/image13.jpg" alt="Project 13"></div>
+          <div class="port-overlay">
+            <div class="port-info">
+              <h3>Project 13</h3>
+              <button class="port-view-btn"><i class="fa-solid fa-expand"></i> View</button>
+            </div>
+          </div>
+          <div class="port-glow"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="logo-m">M</span><span class="logo-rest">ARIA EMAD</span>
+      </div>
+      <p class="footer-copy">© 2026 Maria Emad.</p>
+      <div class="footer-links">
+        <a href="#hero">Top</a>
+        <a href="#portfolio">Work</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box" id="modalBox">
+      <button class="modal-close" id="modalClose"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-img-wrap" id="modalImgWrap"></div>
+      <div class="modal-details">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
